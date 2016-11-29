@@ -321,6 +321,10 @@ tagsInput.directive('tagsInput', function($timeout, $document, $window, $q, tags
                 scope.disabled = value;
             });
 
+            scope.sortableOptions = {
+                containment: '.tags'
+            };
+
             scope.eventHandlers = {
                 input: {
                     keydown: function($event) {
